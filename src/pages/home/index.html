@@ -62,7 +62,7 @@
             </div>
         </section>
         <section id="tools-section">
-            <h2 id="tools-section-title">Featured Tools</h2>
+            <h2 class="section-title">Featured Tools</h2>
             <p id="tools-section-description">Tools to enhance your project management</p>
             <button class="blueButton">View All</button>
             <div id="tools-list">
@@ -104,6 +104,27 @@
                 </div>
             </div>
         </section>
+        <section id="subscribe-section">
+            <div id="subscribe-content">
+                <div id="subscribe-title-container">
+                    <h2 class="section-title">Subscribe to Updates</h2>
+                    <p id="subscribe-description">Stay informed with our latest updates</p>
+                </div>
+                <form id="subscribe-form" onsubmit="">
+                    <div class="subscribe-input-container">
+                        <label for="email-input">Email</label>
+                        <input id="email-input" class="subscribe-input" type="text" placeholder="Enter your email" >
+                        <span id="subscribe-input-helper-text">We promise not to spam</span>
+                    </div>
+                    <div class="subscribe-input-container">
+                        <label for="name-input">Name</label>
+                        <input id="name-input" class="subscribe-input" type="text" placeholder="Enter your name">
+                    </div>
+                    <button type="submit" class="blueButton">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
