@@ -32,6 +32,8 @@ button {
 #header {
     background-color: #331436;
     padding: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 #header-content {
@@ -39,6 +41,8 @@ button {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
     gap: 12px;
 
     @media (min-width:760px) {
