@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Manager</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header id="header">
-        <a class="skip-content" href="#main">skip to main content</a>
-        <a class="skip-content" href="#footer">skip to footer</a>
-        <div id="header-content">
-            <div id="logo-content">
-                <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager">
-                <h1 id="header-title"> Project Manager</h1>
-            </div>
+      <a class="skip-content" href="#main">skip to main content</a>
+      <a class="skip-content" href="#footer">skip to footer</a>
+      <div id="header-content">
+        <div id="logo-content">
+          <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager" />
+          <h1 id="header-title">Project Manager</h1>
         </div>
+      </div>
     </header>
     <script src="script.js"></script>
     <main id="main">
-        <section id="subscribe-section">
-            <div id="subscribe-content">
-                <div id="subscribe-title-container">
-                    <h2 class="section-title">Login Information</h2>
-                    <p id="subscribe-description">Enter your credentials</p>
-                </div>
-                <form id="subscribe-form" onsubmit="">
-                    <div class="subscribe-input-container">
-                        <label for="email-input">Email</label>
-                        <input id="email-input" class="subscribe-input" type="text" placeholder="Enter your email" >
-                        <span id="subscribe-input-helper-text">We promise not to spam</span>
-                    </div>
-                    <div class="subscribe-input-container">
-                        <label for="password-input">Password</label>
-                        <input id="password-input" class="subscribe-input" type="text" placeholder="Enter your password">
-                    </div>
-                    <button type="submit" class="blueButton">Subscribe</button>
-                </form>
+      <section id="login-section">
+        <div id="login-content">
+          <div id="login-title-container">
+            <h2 class="section-title">Login Information</h2>
+            <p id="login-description">Enter your credentials</p>
+          </div>
+          <form id="login-form" onsubmit="">
+            <div class="login-input-container">
+              <label for="email-input">Email</label>
+              <input id="email-input" class="login-input" type="text" placeholder="Enter your email" />
+              <span id="login-input-helper-text">We promise not to spam</span>
             </div>
-        </section>
+            <div class="login-input-container">
+              <label for="password-input">Password</label>
+              <input id="password-input" class="login-input" type="text" placeholder="Enter your password" />
+            </div>
+            <button type="submit" class="blueButton">login</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <div id="footer-container">
-            <div id="footer-social-links-container" class="footer-content">
-                <a class="footer-social-links" href="https://www.facebook.com/">
-                    <img class="footer-social-icon" src="../../assets/facebookIcon.svg" alt="" aria-hidden>
-                </a>
+      <div id="footer-container">
+        <div id="footer-social-links-container" class="footer-content">
+          <a class="footer-social-links" href="https://www.facebook.com/">
+            <img class="footer-social-icon" src="../../assets/facebookIcon.svg" alt="" aria-hidden />
+          </a>
 
-                <a class="footer-social-links" href="https://www.instagram.com/">
-                    <img class="footer-social-icon" src="../../assets/instagramIcon.svg" alt="" aria-hidden>
-                </a>
+          <a class="footer-social-links" href="https://www.instagram.com/">
+            <img class="footer-social-icon" src="../../assets/instagramIcon.svg" alt="" aria-hidden />
+          </a>
 
-                <a class="footer-social-links" href="https://www.linkedin.com/in/adson-nunes/">
-                    <img class="footer-social-icon" src="../../assets/linkedinIcon.svg" alt="" aria-hidden>
-                </a>
-            </div>
-            <div class="footer-content">
-                <span>© 2024 Project Manager. All rights reserved.</span>
-                <nav>
-                    <ul class="footer-content">
-                        <li>
-                            <a href="" class="footer-link">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="" class="footer-link">Terms of Service</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+          <a class="footer-social-links" href="https://www.linkedin.com/in/adson-nunes/">
+            <img class="footer-social-icon" src="../../assets/linkedinIcon.svg" alt="" aria-hidden />
+          </a>
         </div>
+        <div class="footer-content">
+          <span>© 2024 Project Manager. All rights reserved.</span>
+          <nav>
+            <ul class="footer-content">
+              <li>
+                <a href="" class="footer-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="" class="footer-link">Terms of Service</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
