@@ -137,7 +137,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 100%;
   max-width: 520px;
 }
 
@@ -156,6 +155,47 @@ button {
 #login-input-helper-text {
   font-size: 12px;
   color: #00000050;
+}
+
+#login-email-input-error {
+  display: none;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: red;
+}
+
+.error-message {
+  display: none;
+  align-items: center;
+  gap: 4px;
+  color: red;
+  font-size: 12px;
+}
+
+.success-message {
+  display: none;
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#login-success-message {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  min-width: 50%;
+  gap: 12px;
+}
+
+#login-success-message-img {
+  width: 200px;
+}
+
+#login-success-message-text {
+  font-size: 24px;
+  max-width: 300px;
+  color: #331436;
 }
 
 .login-input-container {
