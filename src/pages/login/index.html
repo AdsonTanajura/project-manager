@@ -31,15 +31,31 @@
             <h2 class="section-title">Login Information</h2>
             <p id="login-description">Enter your credentials</p>
           </div>
-          <form id="login-form" onsubmit="">
+          <form id="login-form" onsubmit="return handleSubmit(event)">
             <div class="login-input-container">
               <label for="email-input">Email</label>
-              <input id="email-input" class="login-input" type="text" placeholder="Enter your email" />
-              <span id="login-input-helper-text">We promise not to spam</span>
+              <input
+                id="email-input"
+                class="login-input"
+                type="text"
+                placeholder="Enter your email"
+                onchange="removeError('email')"
+              />
+              <span id="login-email-input-error" class="error-message"></span>
             </div>
             <div class="login-input-container">
               <label for="password-input">Password</label>
-              <input id="password-input" class="login-input" type="text" placeholder="Enter your password" />
+              <input
+                id="password-input"
+                class="login-input"
+                type="password"
+                placeholder="Enter your password"
+                onchange="removeError('password')"
+              />
+              <span id="login-password-input-error" class="error-message">
+                <img src="../../assets/error.svg" alt="" aria-hidden />
+                Please enter your password
+              </span>
             </div>
             <button type="submit" class="blueButton">login</button>
           </form>
