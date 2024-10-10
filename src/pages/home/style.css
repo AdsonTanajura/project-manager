@@ -330,6 +330,10 @@ button {
   width: 100%;
   max-width: 1100px;
   gap: 24px;
+
+  @media (max-width: 798px) {
+    justify-content: center;
+  }
 }
 
 #subscribe-title-container {
@@ -386,7 +390,9 @@ button {
 
 #subscribe-success-message {
   display: none;
+  align-items: center;
   flex-direction: column;
+  min-width: 50%;
   gap: 12px;
 }
 

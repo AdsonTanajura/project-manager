@@ -11,7 +11,6 @@ function handleSubmit(event) {
 
   let isValid = true;
 
-  // Verificar se o email é válido
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(emailInput.value)) {
     emailInput.style.border = '2px solid red';
@@ -20,27 +19,23 @@ function handleSubmit(event) {
     isValid = false;
   }
 
-  // Verificar se o nome não está vazio
   if (nameInput.value.trim() === '' || 0 || false || undefined) {
     nameInput.style.border = '2px solid red';
     nameError.style.display = 'flex';
     isValid = false;
   }
 
-  // Se tudo estiver válido, armazenar no localStorage e exibir mensagem de sucesso
   if (isValid) {
     localStorage.setItem('email', emailInput.value);
     localStorage.setItem('name', nameInput.value);
 
-    subscribeContent.style.flexDirection = 'column';
     successMessage.style.display = 'flex';
     form.style.display = 'none';
   }
 
-  return isValid; // Impede o envio se houver erros
+  return isValid;
 }
 
-// Remove as mensagens de erro quando o usuário interage com o input
 function removeError(field) {
   const input = document.getElementById(`${field}-input`);
   const error = document.getElementById(`subscribe-${field}-input-error`);
