@@ -21,10 +21,9 @@
           <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager" />
           <h1 id="header-title">Project Manager</h1>
         </div>
-        <button class="read-button">Login</button>
+        <a class="read-button" href="../login/index.html">Login</a>
       </div>
     </header>
-    <script src="script.js"></script>
     <main id="main">
       <section id="hero-section">
         <div id="hero-container">
@@ -33,7 +32,7 @@
             Get your projects and ideas in order, all in one place! Sign up now and discover a smarter way to manage
             your work with efficiency and teamwork
           </p>
-          <button class="read-button">Get Started</button>
+          <a class="read-button" href="../login/index.html">Get Started</a>
         </div>
         <img
           id="hero-image"
@@ -90,15 +89,39 @@
             <h2 class="section-title">Subscribe to Updates</h2>
             <p id="subscribe-description">Stay informed with our latest updates</p>
           </div>
-          <form id="subscribe-form" onsubmit="">
+          <div id="subscribe-success-message">
+            <img id="subscribe-success-message-img" src="../../assets/undraw_completed_m9ci 1.svg" alt="" aria-hidden />
+            <span id="subscribe-success-message-text">You’re in! Amazing updates coming to your inbox soon.</span>
+          </div>
+          <form id="subscribe-form" onsubmit="return handleSubmit(event)">
             <div class="subscribe-input-container">
               <label for="email-input">Email</label>
-              <input id="email-input" class="subscribe-input" type="text" placeholder="Enter your email" />
+              <input
+                id="email-input"
+                class="subscribe-input"
+                type="text"
+                placeholder="Enter your email"
+                onchange="removeError('email')"
+              />
               <span id="subscribe-input-helper-text">We promise not to spam</span>
+              <span id="subscribe-email-input-error" class="error-message">
+                <img src="../../assets/error.svg" alt="" aria-hidden />
+                Please enter a valid email address
+              </span>
             </div>
             <div class="subscribe-input-container">
               <label for="name-input">Name</label>
-              <input id="name-input" class="subscribe-input" type="text" placeholder="Enter your name" />
+              <input
+                id="name-input"
+                class="subscribe-input"
+                type="text"
+                placeholder="Enter your name"
+                onchange="removeError('name')"
+              />
+              <span id="subscribe-name-input-error" class="error-message">
+                <img src="../../assets/error.svg" alt="" aria-hidden />
+                Please enter your name
+              </span>
             </div>
             <button type="submit" class="blueButton">Subscribe</button>
           </form>
