@@ -7,6 +7,7 @@ function handleSubmit(event) {
   const nameError = document.getElementById('subscribe-name-input-error');
   const successMessage = document.getElementById('subscribe-success-message');
   const form = document.getElementById('subscribe-form');
+  const subscribeContent = document.getElementById('subscribe-content');
 
   let isValid = true;
 
@@ -31,6 +32,7 @@ function handleSubmit(event) {
     localStorage.setItem('email', emailInput.value);
     localStorage.setItem('name', nameInput.value);
 
+    subscribeContent.style.flexDirection = 'column';
     successMessage.style.display = 'flex';
     form.style.display = 'none';
   }
