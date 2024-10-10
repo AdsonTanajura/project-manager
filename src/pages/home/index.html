@@ -1,160 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Manager</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header id="header">
-        <a class="skip-content" href="#main">skip to main content</a>
-        <a class="skip-content" href="#footer">skip to footer</a>
-        <div id="header-content">
-            <div id="logo-content">
-                <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager">
-                <h1 id="header-title"> Project Manager</h1>
-            </div>
-            <button class="read-button">Login</button>
+      <a class="skip-content" href="#main">skip to main content</a>
+      <a class="skip-content" href="#footer">skip to footer</a>
+      <div id="header-content">
+        <div id="logo-content">
+          <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager" />
+          <h1 id="header-title">Project Manager</h1>
         </div>
+        <button class="read-button">Login</button>
+      </div>
     </header>
     <script src="script.js"></script>
     <main id="main">
-        <section id="hero-section">
-            <div id="hero-container">
-                <h2 id="hero-title">Welcome to <span id="hero-highlight-title">Project Manager</span></h2>
-                <p id="hero-description">Get your projects and ideas in order, all in one place! Sign up now and discover a smarter way to manage your work with efficiency and teamwork</p>
-                <button class="read-button">Get Started</button>
+      <section id="hero-section">
+        <div id="hero-container">
+          <h2 id="hero-title">Welcome to <span id="hero-highlight-title">Project Manager</span></h2>
+          <p id="hero-description">
+            Get your projects and ideas in order, all in one place! Sign up now and discover a smarter way to manage
+            your work with efficiency and teamwork
+          </p>
+          <button class="read-button">Get Started</button>
+        </div>
+        <img
+          id="hero-image"
+          src="../../assets/welcomeImage.png"
+          alt="Foto de uma mulher gerada por inteligencia artificial, ela esta olhando para fluxograma, ela esta usando um terno."
+        />
+      </section>
+      <section id="tools-section">
+        <h2 class="section-title">Featured Tools</h2>
+        <p id="tools-section-description">Tools to enhance your project management</p>
+        <button class="blueButton">View All</button>
+        <div id="tools-list">
+          <div class="tools-item">
+            <div class="tools-item-icon-container">
+              <img class="tools-item-icon" src="../../assets/tool.svg" alt="" aria-hidden />
             </div>
-            <img id="hero-image" src="../../assets/welcomeImage.png" alt="Foto de uma mulher gerada por inteligencia artificial, ela esta olhando para fluxograma, ela esta usando um terno.">
-        </section>
-        <section id="manager-section">
-            <div id="manager-container">
-                <h2 id="manager-title">The manager</h2>
-                <p id="manager-description">Project Manager is a tool designed to make organizing and tracking your daily tasks easier than ever. With a clean, intuitive interface and powerful features, you can plan, prioritize, and keep tabs on your projects - whether you’re working solo or a with a team</p>
-                <button class="blueButton">Learn More</button>
+            <div class="tools-item-content">
+              <h3 class="tools-item-title">Task Scheduler</h3>
+              <p class="tools-item-description">Plan and schedule tasks</p>
             </div>
-            <div id="manager-carder-container">
-                <div class="cardContent">
-                        <img class="manager-img" src="../../assets/managerCard1.png" alt="Manage Projects cover">
-                        <div class="card-description">
-                            <h3 class="cardTitle">Manage Projects</h3>
-                            <p class="card-amount">20+ projects</p>
-                        </div>
-                </div>
-                <div class="cardContent">
-                        <img class="manager-img" src="../../assets/managerCard2.png" alt="Track Tasks cover">
-                        <div class="card-description">
-                            <h3 class="cardTitle">Track Tasks</h3>
-                            <p class="card-amount">50+ tasks</p>
-                        </div>
-                </div>
-                <div class="cardContent">
-                        <img class="manager-img" src="../../assets/managerCard3.png" alt="Collaborate cover">
-                        <div class="card-description">
-                            <h3 class="cardTitle">Collaborate</h3>
-                            <p class="card-amount">10+ team members</p>
-                        </div>
-                </div>
+          </div>
+          <div class="tools-item">
+            <div class="tools-item-icon-container">
+              <img class="tools-item-icon" src="../../assets/clock.svg" alt="" aria-hidden />
             </div>
-        </section>
-        <section id="tools-section">
-            <h2 class="section-title">Featured Tools</h2>
-            <p id="tools-section-description">Tools to enhance your project management</p>
-            <button class="blueButton">View All</button>
-            <div id="tools-list">
-                <div class="tools-item">
-                    <div class="tools-item-icon-container">
-                        <img class="tools-item-icon" src="../../assets/tool.svg" alt="" aria-hidden>
-                    </div>
-                    <div class="tools-item-content">
-                        <h3 class="tools-item-title">Task Scheduler</h3>
-                        <p class="tools-item-description">Plan and schedule tasks</p>
-                    </div>
-                </div>
-                <div class="tools-item">
-                    <div class="tools-item-icon-container">
-                        <img class="tools-item-icon" src="../../assets/clock.svg" alt="" aria-hidden>
-                    </div>    
-                    <div class="tools-item-content">
-                        <h3 class="tools-item-title">Deadline Tracker</h3>
-                        <p class="tools-item-description">Keep track of project deadlines</p>
-                    </div>
-                </div>
-                <div class="tools-item">
-                    <div class="tools-item-icon-container">
-                        <img class="tools-item-icon" src="../../assets/message.svg" alt="" aria-hidden>
-                    </div>    
-                    <div class="tools-item-content">
-                        <h3 class="tools-item-title">Communication Hub</h3>
-                        <p class="tools-item-description">Centralized team communication</p>
-                    </div>
-                </div>
-                <div class="tools-item">
-                    <div class="tools-item-icon-container">
-                        <img class="tools-item-icon" src="../../assets/table.svg" alt="" aria-hidden>
-                    </div>    
-                    <div class="tools-item-content">
-                        <h3 class="tools-item-title">Progress Report</h3>
-                        <p class="tools-item-description">Track project progress</p>
-                    </div>
-                </div>
+            <div class="tools-item-content">
+              <h3 class="tools-item-title">Deadline Tracker</h3>
+              <p class="tools-item-description">Keep track of project deadlines</p>
             </div>
-        </section>
-        <section id="subscribe-section">
-            <div id="subscribe-content">
-                <div id="subscribe-title-container">
-                    <h2 class="section-title">Subscribe to Updates</h2>
-                    <p id="subscribe-description">Stay informed with our latest updates</p>
-                </div>
-                <form id="subscribe-form" onsubmit="">
-                    <div class="subscribe-input-container">
-                        <label for="email-input">Email</label>
-                        <input id="email-input" class="subscribe-input" type="text" placeholder="Enter your email" >
-                        <span id="subscribe-input-helper-text">We promise not to spam</span>
-                    </div>
-                    <div class="subscribe-input-container">
-                        <label for="name-input">Name</label>
-                        <input id="name-input" class="subscribe-input" type="text" placeholder="Enter your name">
-                    </div>
-                    <button type="submit" class="blueButton">Subscribe</button>
-                </form>
+          </div>
+          <div class="tools-item">
+            <div class="tools-item-icon-container">
+              <img class="tools-item-icon" src="../../assets/message.svg" alt="" aria-hidden />
             </div>
-        </section>
+            <div class="tools-item-content">
+              <h3 class="tools-item-title">Communication Hub</h3>
+              <p class="tools-item-description">Centralized team communication</p>
+            </div>
+          </div>
+          <div class="tools-item">
+            <div class="tools-item-icon-container">
+              <img class="tools-item-icon" src="../../assets/table.svg" alt="" aria-hidden />
+            </div>
+            <div class="tools-item-content">
+              <h3 class="tools-item-title">Progress Report</h3>
+              <p class="tools-item-description">Track project progress</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="subscribe-section">
+        <div id="subscribe-content">
+          <div id="subscribe-title-container">
+            <h2 class="section-title">Subscribe to Updates</h2>
+            <p id="subscribe-description">Stay informed with our latest updates</p>
+          </div>
+          <form id="subscribe-form" onsubmit="">
+            <div class="subscribe-input-container">
+              <label for="email-input">Email</label>
+              <input id="email-input" class="subscribe-input" type="text" placeholder="Enter your email" />
+              <span id="subscribe-input-helper-text">We promise not to spam</span>
+            </div>
+            <div class="subscribe-input-container">
+              <label for="name-input">Name</label>
+              <input id="name-input" class="subscribe-input" type="text" placeholder="Enter your name" />
+            </div>
+            <button type="submit" class="blueButton">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <section id="manager-section">
+        <div id="manager-container">
+          <h2 id="manager-title">The manager</h2>
+          <p id="manager-description">
+            Project Manager is a tool designed to make organizing and tracking your daily tasks easier than ever. With a
+            clean, intuitive interface and powerful features, you can plan, prioritize, and keep tabs on your projects -
+            whether you’re working solo or a with a team
+          </p>
+          <button class="blueButton">Learn More</button>
+        </div>
+        <div id="manager-carder-container">
+          <div class="cardContent">
+            <img class="manager-img" src="../../assets/managerCard1.png" alt="Manage Projects cover" />
+            <div class="card-description">
+              <h3 class="cardTitle">Manage Projects</h3>
+              <p class="card-amount">20+ projects</p>
+            </div>
+          </div>
+          <div class="cardContent">
+            <img class="manager-img" src="../../assets/managerCard2.png" alt="Track Tasks cover" />
+            <div class="card-description">
+              <h3 class="cardTitle">Track Tasks</h3>
+              <p class="card-amount">50+ tasks</p>
+            </div>
+          </div>
+          <div class="cardContent">
+            <img class="manager-img" src="../../assets/managerCard3.png" alt="Collaborate cover" />
+            <div class="card-description">
+              <h3 class="cardTitle">Collaborate</h3>
+              <p class="card-amount">10+ team members</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <div id="footer-container">
-            <div id="footer-social-links-container" class="footer-content">
-                <a class="footer-social-links" href="https://www.facebook.com/">
-                    <img class="footer-social-icon" src="../../assets/facebookIcon.svg" alt="" aria-hidden>
-                </a>
+      <div id="footer-container">
+        <div id="footer-social-links-container" class="footer-content">
+          <a class="footer-social-links" href="https://www.facebook.com/">
+            <img class="footer-social-icon" src="../../assets/facebookIcon.svg" alt="" aria-hidden />
+          </a>
 
-                <a class="footer-social-links" href="https://www.instagram.com/">
-                    <img class="footer-social-icon" src="../../assets/instagramIcon.svg" alt="" aria-hidden>
-                </a>
+          <a class="footer-social-links" href="https://www.instagram.com/">
+            <img class="footer-social-icon" src="../../assets/instagramIcon.svg" alt="" aria-hidden />
+          </a>
 
-                <a class="footer-social-links" href="https://www.linkedin.com/in/adson-nunes/">
-                    <img class="footer-social-icon" src="../../assets/linkedinIcon.svg" alt="" aria-hidden>
-                </a>
-            </div>
-            <div class="footer-content">
-                <span>© 2024 Project Manager. All rights reserved.</span>
-                <nav>
-                    <ul class="footer-content">
-                        <li>
-                            <a href="" class="footer-link">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="" class="footer-link">Terms of Service</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+          <a class="footer-social-links" href="https://www.linkedin.com/in/adson-nunes/">
+            <img class="footer-social-icon" src="../../assets/linkedinIcon.svg" alt="" aria-hidden />
+          </a>
         </div>
+        <div class="footer-content">
+          <span>© 2024 Project Manager. All rights reserved.</span>
+          <nav>
+            <ul class="footer-content">
+              <li>
+                <a href="" class="footer-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="" class="footer-link">Terms of Service</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
