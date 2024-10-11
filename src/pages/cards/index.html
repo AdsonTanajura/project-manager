@@ -13,7 +13,7 @@
     <header id="header">
         <a class="skip-content" href="#main">skip to main content</a>
         <a class="skip-content" href="#footer">skip to footer</a>
-        <div id="header-content">
+        <div id="header-desktop">
             <div id="logo-content">
                 <a href="../home/index.html">
                     <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager">
@@ -35,10 +35,45 @@
                         <a class="head-links-item" href="">Profile</a>
                     </li>
                 </ul>
-                <div id="header-search-bar">
+                <div class="header-search-bar">
                     <input id="header-search-input" type="text" value="Search in site">
                     <img src="../../assets/magnifier.svg" alt="" aria-hidden>
                 </div>
+            </div>
+        </div>
+        <div id="header-mobile-container">
+            <div id="header-mobile">
+                <button id="menu-mobile" class="icon-button" onclick="return handleClickMenuMobile()">
+                    <img id="menu-mobile-icon" class="closed" src="../../assets/menu.svg" alt="" aria-hidden>
+                    <span id="menu-mobile-label" class="screen-reader-only">Abrir menu</span>
+                </button>
+                <a href="../home/index.html">
+                    <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager">
+                </a>
+                <button id="mobile-search-button-bar" onclick="return handleClickMobileSearchBar()" class="icon-button">
+                    <div class="header-search-bar" id="header-mobile-search-bar">
+                        <input id="header-search-input" type="text" value="Search in site" onblur="return ClearMobileSearchBar()">
+                    </div>
+                    <img src="../../assets/search.svg" alt="" aria-hidden>
+                    <span class="screen-reader-only">Pesquisar</span>
+                </button>
+            </div>
+            <nav id="header-mobile-nav" class="closed">
+                <ul class="header-navigation-links">
+                    <li >
+                        <a class="head-links-item" href="../home/index.html">Home</a>
+                    </li>
+                    <li >
+                        <a class="head-links-item" href="">About</a>
+                    </li>
+                    <li >
+                        <a class="head-links-item" href="">Settings</a>
+                    </li>
+                    <li >
+                        <a class="head-links-item" href="">Profile</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main id="main">

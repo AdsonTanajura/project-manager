@@ -71,7 +71,7 @@ section {
   justify-content: center;
 }
 
-#header-content {
+#header-desktop {
   display: flex;
   flex-direction: row;
   justify-content: center;
