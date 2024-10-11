@@ -16,3 +16,20 @@ priorityCards.forEach((card) => {
   const priorityValue = card.textContent.trim();
   setPriority(priorityValue, card);
 });
+
+function handleClickMenuMobile() {
+  const element = document.getElementById('header-mobile-nav');
+  const icon = document.getElementById('menu-mobile-icon');
+  const label = document.getElementById('menu-mobile-label');
+  if (element.classList.contains('opened')) {
+    element.classList.remove('opened');
+    element.classList.add('closed');
+    icon.src = '../../assets/menu.svg';
+    label.textContent = 'Abrir menu';
+  } else {
+    element.classList.remove('closed');
+    element.classList.add('opened');
+    icon.src = '../../assets/close.svg';
+    label.textContent = 'Fechar menu';
+  }
+}
