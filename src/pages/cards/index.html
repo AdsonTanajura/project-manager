@@ -35,7 +35,7 @@
                         <a class="head-links-item" href="">Profile</a>
                     </li>
                 </ul>
-                <div id="header-search-bar">
+                <div class="header-search-bar">
                     <input id="header-search-input" type="text" value="Search in site">
                     <img src="../../assets/magnifier.svg" alt="" aria-hidden>
                 </div>
@@ -50,7 +50,10 @@
                 <a href="../home/index.html">
                     <img class="logo" src="../../assets/projectManagerLogo.svg" alt="Logo Project Manager">
                 </a>
-                <button class="icon-button">
+                <button id="mobile-search-button-bar" onclick="return handleClickMobileSearchBar()" class="icon-button">
+                    <div class="header-search-bar" id="header-mobile-search-bar">
+                        <input id="header-search-input" type="text" value="Search in site" onblur="return ClearMobileSearchBar()">
+                    </div>
                     <img src="../../assets/search.svg" alt="" aria-hidden>
                     <span class="screen-reader-only">Pesquisar</span>
                 </button>

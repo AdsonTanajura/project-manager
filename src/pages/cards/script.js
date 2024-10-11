@@ -33,3 +33,21 @@ function handleClickMenuMobile() {
     label.textContent = 'Fechar menu';
   }
 }
+
+function handleClickMobileSearchBar() {
+  const mobileMenu = document.getElementById('menu-mobile');
+  const mobileSearchBar = document.getElementById('header-mobile-search-bar');
+  const searchInput = document.getElementById('header-search-input');
+
+  mobileMenu.style.display = 'none';
+  mobileSearchBar.style.display = 'flex';
+  searchInput.focus();
+}
+
+function ClearMobileSearchBar() {
+  const mobileMenu = document.getElementById('menu-mobile');
+  const mobileSearchBar = document.getElementById('header-mobile-search-bar');
+
+  mobileMenu.style.display = 'flex';
+  mobileSearchBar.style.display = 'none';
+}

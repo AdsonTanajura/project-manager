@@ -100,6 +100,11 @@ main {
   gap: 50px;
 }
 
+#header-mobile-search-bar {
+  display: none;
+  border: none;
+}
+
 #header-desktop {
   display: none;
   flex-direction: row;
@@ -147,7 +152,7 @@ main {
   text-decoration: none;
 }
 
-#header-search-bar {
+.header-search-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
