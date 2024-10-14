@@ -167,15 +167,22 @@ section {
 }
 
 .blue-button {
-  width: 240px;
-  max-width: 90vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
   height: 48px;
+  width: 240px;
+  max-width: 100vw;
+  border-radius: 8px;
+  font-size: 16px;
   background-color: #331436;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   color: #ffffff;
   transition: color 0.3s ease;
   border: none;
-  border-radius: 8px;
 }
 
 .blue-button:hover {
