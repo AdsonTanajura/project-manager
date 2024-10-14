@@ -36,18 +36,17 @@ function handleClickMenuMobile() {
 
 function handleClickMobileSearchBar() {
   const mobileMenu = document.getElementById('menu-mobile');
-  const mobileSearchBar = document.getElementById('header-mobile-search-bar');
-  const searchInput = document.getElementById('header-search-input');
+  const mobileSearchInput = document.getElementById('header-mobile-search-input');
 
   mobileMenu.style.display = 'none';
-  mobileSearchBar.style.display = 'flex';
-  searchInput.focus();
+  mobileSearchInput.style.display = 'flex';
+  mobileSearchInput.focus();
 }
 
-function ClearMobileSearchBar() {
+function clearMobileSearchBar() {
   const mobileMenu = document.getElementById('menu-mobile');
-  const mobileSearchBar = document.getElementById('header-mobile-search-bar');
+  const mobileSearchInput = document.getElementById('header-mobile-search-input');
 
   mobileMenu.style.display = 'flex';
-  mobileSearchBar.style.display = 'none';
+  mobileSearchInput.style.display = 'none';
 }
