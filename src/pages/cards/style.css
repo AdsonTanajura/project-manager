@@ -224,7 +224,7 @@ main {
   background-color: #f8f2ff;
 }
 
-#top-information {
+.card-top-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -238,7 +238,8 @@ main {
 
 .card-title {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 900;
+  color: #331436;
 }
 
 .card-priority {
