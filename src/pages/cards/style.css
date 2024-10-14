@@ -100,11 +100,6 @@ main {
   gap: 50px;
 }
 
-#header-mobile-search-bar {
-  display: none;
-  border: none;
-}
-
 #header-desktop {
   display: none;
   flex-direction: row;
@@ -168,6 +163,16 @@ main {
   color: #ffffff50;
   font-size: 14px;
   font-weight: 300;
+}
+
+#header-mobile-search-input {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: #ffffff50;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 4px;
 }
 
 #cards-section {
