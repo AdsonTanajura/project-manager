@@ -115,7 +115,7 @@ main {
   }
 }
 
-#logo-content {
+#header-logo-content {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -140,7 +140,7 @@ main {
   flex-wrap: wrap;
 }
 
-.head-links-item {
+.header-links-item {
   font-size: 16px;
   font-weight: 300;
   color: #ffffff;
@@ -207,7 +207,7 @@ main {
   font-weight: 500;
 }
 
-.crads-amount {
+.cards-amount {
   display: flex;
   flex-direction: column;
   gap: 10px;

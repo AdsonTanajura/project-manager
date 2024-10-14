@@ -57,7 +57,7 @@ button {
   }
 }
 
-#logo-content {
+#header-logo-content {
   display: flex;
   align-items: center;
   gap: 20px;

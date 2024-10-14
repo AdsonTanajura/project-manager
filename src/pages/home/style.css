@@ -85,7 +85,7 @@ section {
   }
 }
 
-#logo-content {
+#header-logo-content {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -96,7 +96,7 @@ section {
   font-weight: 28;
 }
 
-#featured-section-title {
+#tools-featured-section-title {
   color: #331436;
 }
 
@@ -191,22 +191,22 @@ section {
   justify-content: center;
 }
 
-.cardContent {
+.manager-card-content {
   max-width: 340px;
 }
 
-.card-description {
+.manager-card-description {
   gap: 4px;
   margin-top: 12px;
 }
 
-.cardTitle {
+.manager-card-title {
   font-size: 16px;
   font-weight: 300;
   color: #331436;
 }
 
-.card-amount {
+.manager-card-amount {
   font-size: 20px;
   color: #331436;
   font-weight: 500;
